@@ -56,3 +56,12 @@ fun TextPlayerUpdate(
         Text(text)
     }
 }
+
+@Composable
+fun DoubleSpeedPlayerUpdate(
+    modifier: Modifier = Modifier,
+) {
+    PlayerUpdate(modifier) {
+        Text("2x", fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+    }
+}
